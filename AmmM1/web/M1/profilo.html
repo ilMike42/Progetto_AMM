@@ -8,31 +8,43 @@
         <meta name="keywords" content="nerd book facebook">
     </head>
     <body>
+        <div id="header">
+            <a href="descrizione.html">Descrizione</a>
+            <a href="login.html">Login</a>
+        </div>
         <div id="form_div">
             <form id="profilo" action="servlet.java">
                 <!--Nome-->
                 <label for="name_field">Nome</label>
                 <input type="text" name="name_field" id="name_field" />
+                <br/>
                 <!--COgnome-->
                 <label for="surname_field">Cognome</label>
                 <input type="text" name="surname_field" id="surname_field" />
+                <br/>
+
                 <!--URL-->
                 <label for="url_field">Url immagine</label>
                 <input type="url" name="url_field" id="url_field" />
+                <br/>
                 <!--Bio-->
                 <label for="bio_field">Biografia</label>
                 <textarea name="bio_field" id="bio_field" rows="4" cols="20">
                 </textarea>
+                <br/>
                 <!--Birthdate-->
                 <label for="birth_field">Data di Nascita</label>
                 <input type="date" name="birth_field" id="birth_field" />
+                <br/>
                 <!--Pass-->
                 <label for="pass_field">Password</label>
                 <input type="password" name="pass_field" id="pass_field" />
+                <br/>
                 <!--Conferma Pass-->
                 <label for="confirm_pass_field">Conferma Password</label>
                 <input type="password" name="confirm_pass_field" id="confirm_pass_field" />
                 <button type="submit">Invia</button>
+                <br/>
             </form>
         </div>
 
