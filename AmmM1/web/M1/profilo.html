@@ -8,6 +8,38 @@
         <meta name="keywords" content="nerd book facebook">
     </head>
     <body>
+        <!--
+            Create un form per l’inserimento dei dati del profilo all’interno della pagina profilo.html. Il form deve richiedere all’utente le seguenti informazioni, utilizzando le tipologie di input corrette:
+                Nome dell’utente
+                Cognome dell’utente
+                URL di una immagine per il profilo
+                Frase di presentazione
+                Data di nascita
+                Password
+                Conferma password
+        -->
 
+        <form>
+            <label for="user_field">Nome</label>
+            <input type="text" name="user_field" id="user_field" />
+            <label for="user_field">Cognome</label>
+            <input type="text" name="user_field" id="user_field" />
+            <!--URL-->
+            <label for="user_field">Url immagine</label>
+            <input type="url" name="user_field" id="user_field" />
+            <!--Bio-->
+            <label for="user_field">Biografia</label>
+            <textarea name="user_field" id="user_field" rows="4" cols="20">
+            </textarea>
+            <!--Birthdate-->
+            <label for="user_field">Data di Nascita</label>
+            <input type="date" name="user_field" id="user_field" />
+            <!--Pass-->
+            <label for="user_field">Password</label>
+            <input type="password" name="user_field" id="user_field" />
+            <!--Conferma Pass-->
+            <label for="user_field">Conferma Password</label>
+            <input type="password" name="user_field" id="user_field" />
+        </form>
     </body>
 </html>
