@@ -1,0 +1,52 @@
+/*
+Impostare le caratteristiche generali di visualizzazione della pagina, facendo in modo che le regole che scrivete valgano per tutte le pagine. In particolare:
+Colore di sfondo
+Colore e font per il del testo
+Proprietà dei dei titoli (almeno da h1 ad h3)
+Proprietà dei link
+*/
+
+body
+{
+    background-color: azure;
+    color: black;
+    font-family: sans-serif;
+}
+
+h1,h2,h3
+{
+    /*color: black;*/
+    font-family: "Segoe UI","Frutiger","Frutiger Linotype";
+}
+
+a
+{
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+
+input{
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+}
+
+/*
+a:visited
+{
+    color: blueviolet;
+}
+
+input:focus
+{
+    color: ;
+}
+
+Visualizzazione dei campi di input
+Fate attenzione alla leggibilità ed alla gradevolezza degli stili. */

@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Michael Planu">
         <meta name="keywords" content="nerd book facebook">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
     </head>
     <body>
         <div id="header">
@@ -22,11 +24,9 @@
         <div id="form_login">
             <form action="servlet.java" method="POST">
                 <label for="user_field">Username</label>
-                <input type="text" name="user_field" id="user_field" />
-                <br/>
+                <input type="text" name="user_field" id="user_field" placeholder="User"/>
                 <label for="password_field">Password</label>
-                <input type="password" name="password_field" id="password_field" />
-                 <br/>
+                <input type="password" name="password_field" id="password_field" placeholder="Password"/>
                 <button type="submit">Invia</button>
             </form>
         </div>
