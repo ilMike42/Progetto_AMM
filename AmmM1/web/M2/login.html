@@ -10,25 +10,26 @@
 
     </head>
     <body>
-        <div id="header">
-            <div id="title">
-                Login
+        <div id="page">
+            <div id="header">
+                <div id="title">
+                    NerdBook
+                </div>
             </div>
-            <div id="nav">
-                <a href="descrizione.html">Descrizione</a>
-                <a href="profilo.html">Profilo</a>
-                <a href="bacheca.html">Bacheca</a>
-            </div>
+            <div id="login" class="profilo">
+                <form action="servlet.java" method="POST">
+                    <div class="fields">
+                        <label for="user_field">Username</label>
+                        <input type="text" name="user_field" id="user_field" placeholder="User"/>
+                    </div>
 
-        </div>
-        <div id="form_login">
-            <form action="servlet.java" method="POST">
-                <label for="user_field">Username</label>
-                <input type="text" name="user_field" id="user_field" placeholder="User"/>
-                <label for="password_field">Password</label>
-                <input type="password" name="password_field" id="password_field" placeholder="Password"/>
-                <button type="submit">Invia</button>
-            </form>
+                    <div class="fields">
+                        <label for="password_field">Password</label>
+                        <input type="password" name="password_field" id="password_field" placeholder="Password"/>
+                    </div>
+                    <button type="submit" class="sendButton">Invia</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>

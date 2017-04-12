@@ -13,32 +13,59 @@
 
         <div id="header">
             <div id="title">
-                Bacheca
+                NerdBook
             </div>
-            <div id="login">
-                <a href="descrizione.html">Descrizione</a>
-                <a href="login.html">Login</a>
+            <div id="linksContainer">
+                <div  class="links">
+                    <a href="profilo.html">Profilo</a>
+                </div>
+                <div class="links active">
+                    <a href="bacheca.html">Bacheca</a>
+                </div>
             </div>
         </div>
-        <div id="container">
-            <div id="posts">
-                <div id="post1">
-                    <img src="img/nerd.jpg" alt="Foto Profilo di Gigi" width="70" height="70"/>
-                    <p>Gigi</p>
-                    <p>A cosa sto pensando?</p>
+        <div class="container">
+            <div class="navbar">
+                    <input type="search" class="ricerca">
+                    <div class="peopleContainer">
+                        <h2>Persone</h2>
+                        <ul>
+                            <li>Mike</li>
+                            <li>Gigi</li>
+                            <li>Rob Stark</li>
+                        </ul>
+                    </div>
+
+                    <div class="groupsContainer">
+                        <h2>Gruppi</h2>
+                        <ul>
+                            <li class="risparmiatoriLi">Risparmiatori</li>
+                            <li class="todoistLi">Todoist</li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="postContainer">
+                <div id="post1" class="posts">
+                    <div class="contentdiv">
+                        <img src="img/nerd.jpg" alt="Foto Profilo di Gigi" title="Foto Profilo di Gigi" width="70" height="70" class="propic"/>
+                        <p class="username">Gigi</p>
+                    </div>
+                    <div class="contentdiv">
+                        <p class="postContent">A cosa sto pensando?</p>
+                    </div>
                 </div>
 
-                <div id="post2">
-                    <img src="img/nerd.jpg" alt="Foto Profilo di Gigi" width="70" height="70"/>
-                    <p>Gigi</p>
-                    <p>Quanto è un figo Leopardi?</p>
-                    <img src="img/leo.jpg" alt="Foto di Giacomo Leopardi" width="200" height="240"/>
+                <div id="post2" class="posts">
+                    <img src="img/mike.jpg" alt="Foto Profilo di Mike" title="Foto Profilo di Mike" class="propic"/>
+                    <p class="username">Mike</p>
+                    <p class="postContent">Quanto è un figo Leopardi?</p>
+                    <img src="img/leo.jpg" alt="Foto di Giacomo Leopardi" class="imageContent"/>
                 </div>
 
-                <div id="post3">
-                    <img src="img/nerd.jpg" alt="Foto Profilo di Gigi" width="70" height="70"/>
-                    <p>Gigi</p>
-                    <p>
+                <div id="post3" class="posts">
+                    <img src="img/lanfranco.jpg" alt="Foto Profilo di Lanfranco" title="Foto Profilo di Lanfranco" class="propic"/>
+                    <p class="username">Lanfranco</p>
+                    <p class="postContent">
                         APRE UNA REPOSITORY SU GITHUB: IL RISULTATO E' STUPENDO <a href="https://github.com/ilMike42/Progetto_AMM.git">LEGGI LA NOTIZIA</a>
                     </p>
 

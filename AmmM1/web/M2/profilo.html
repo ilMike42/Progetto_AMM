@@ -10,50 +10,92 @@
 
     </head>
     <body>
-        <div id="header">
-            <div id="title">
-                Profilo
+        <div id="page">
+            <div id="header">
+                <div id="title">
+                    NerdBook
+                </div>
+                <div id="linksContainer">
+                    <div  class="links active">
+                        <a href="profilo.html">Profilo</a>
+                    </div>
+                    <div class="links">
+                        <a href="bacheca.html">Bacheca</a>
+                    </div>
+                </div>
             </div>
-            <div id="nav">
-                <a href="descrizione.html">Descrizione</a>
-                <a href="login.html">Login</a>
+            <div class="container">
+                <div class="navbar">
+                    <input type="search" class="ricerca">
+                    <div class="peopleContainer">
+                        <h2>Persone</h2>
+                        <ul>
+                            <li>Mike</li>
+                            <li>Gigi</li>
+                            <li>Rob Stark</li>
+                        </ul>
+                    </div>
+
+                    <div class="groupsContainer">
+                        <h2>Gruppi</h2>
+                        <ul>
+                            <li class="risparmiatoriLi">Risparmiatori</li>
+                            <li class="todoistLi">Todoist</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profilo">
+                    <form action="servlet.java" method="POST">
+                        <div class="fields">
+                            <!--Nome-->
+                            <label for="name_field">Nome</label>
+                            <input type="text" name="name_field" id="name_field" />
+                        </div>
+
+                        <div class="fields">
+                            <!--Cognome-->
+                            <label for="surname_field">Cognome</label>
+                            <input type="text" name="surname_field" id="surname_field" />
+                        </div>
+
+                        <div class="fields">
+                             <!--URL-->
+                            <label for="url_field">Url immagine</label>
+                            <input type="url" name="url_field" id="url_field" />
+                        </div>
+
+                        <div class="fields">
+                            <!--Bio-->
+                            <label for="bio_field">Biografia</label>
+                            <textarea name="bio_field" id="bio_field" rows="4" cols="20">
+                            </textarea>
+                        </div>
+
+                        <div class="fields">
+                            <!--Birthdate-->
+                            <label for="birth_field">Data di Nascita</label>
+                            <input type="date" name="birth_field" id="birth_field" />
+                        </div>
+
+                        <div class="fields">
+                            <!--Pass-->
+                            <label for="pass_field">Password</label>
+                            <input type="password" name="pass_field" id="pass_field" />
+                        </div>
+
+
+                        <div class="fields">
+                            <!--Conferma Pass-->
+                            <label for="confirm_pass_field">Conferma Password</label>
+                            <input type="password" name="confirm_pass_field" id="confirm_pass_field" />
+                        </div>
+
+                        <div class="fields">
+                            <button type="submit" class="sendButton">Invia</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div id="form_div">
-            <form id="profilo" action="servlet.java" method="POST">
-                <!--Nome-->
-                <label for="name_field">Nome</label>
-                <input type="text" name="name_field" id="name_field" />
-                <br/>
-                <!--Cognome-->
-                <label for="surname_field">Cognome</label>
-                <input type="text" name="surname_field" id="surname_field" />
-                <br/>
-
-                <!--URL-->
-                <label for="url_field">Url immagine</label>
-                <input type="url" name="url_field" id="url_field" />
-                <br/>
-                <!--Bio-->
-                <label for="bio_field">Biografia</label>
-                <textarea name="bio_field" id="bio_field" rows="4" cols="20">
-                </textarea>
-                <br/>
-                <!--Birthdate-->
-                <label for="birth_field">Data di Nascita</label>
-                <input type="date" name="birth_field" id="birth_field" />
-                <br/>
-                <!--Pass-->
-                <label for="pass_field">Password</label>
-                <input type="password" name="pass_field" id="pass_field" />
-                <br/>
-                <!--Conferma Pass-->
-                <label for="confirm_pass_field">Conferma Password</label>
-                <input type="password" name="confirm_pass_field" id="confirm_pass_field" />
-                <br/>
-                <button type="submit">Invia</button>
-            </form>
-        </div>
-
     </body>
 </html>
