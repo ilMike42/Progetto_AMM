@@ -20,13 +20,13 @@ h1,h2,h3
     font-family: "Segoe UI","Frutiger","Frutiger Linotype";
 }
 
-#header a
+.header a
 {
     color: white;
     text-decoration: none;
 }
 
-#header a:hover
+.header a:hover
 {
     text-decoration: underline;
 }
@@ -67,7 +67,7 @@ label
 
 
 
-#header
+.header
 {
     width: 100%;
     min-width: 500px;
@@ -164,12 +164,13 @@ label
 
 .posts a
 {
-
+    font-weight: bold;
 }
 
-.posts a.hover
+.posts a:hover
 {
-
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .propic
@@ -319,6 +320,9 @@ label
     padding: 3%;
 }
 
+
+/*RESPONSIVE QUERY*/
+
 @media only screen and (max-width: 480px)
 {
     .navbar
@@ -343,6 +347,12 @@ label
     #login
     {
         margin-left: 25vw;
+    }
+
+    #descriptionCont
+    {
+        margin-left: 40vw;
+        margin-top: 20vh;
     }
 }
 
